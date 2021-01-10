@@ -38,7 +38,7 @@ public class Game {
     @Getter
     private int minPlayers = plugin.getConfig().getInt("min-players");
     @Getter
-    private final int countdown = 30;
+    private final int countdown = 60;
     private int runnerMax = plugin.getConfig().getInt("runner-max");
     @Getter
     private final Map<Player, Long> reconnectTimer = new HashMap<>();
