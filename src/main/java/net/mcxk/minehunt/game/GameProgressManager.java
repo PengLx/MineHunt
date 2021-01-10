@@ -34,16 +34,11 @@ public class GameProgressManager {
             case GAME_STARTING:
             case STONE_AGE:
             case IRON_MINED:
-                break;
             case COMPASS_UNLOCKED:
             case ENTER_NETHER:
-                break;
             case GET_BLAZE_ROD:
-                break;
             case GET_ENDER_PERAL:
-                break;
             case ENTER_END:
-                break;
             case KILLED_DRAGON:
                 broadcastProgress(progress,false,false);
                 break;
