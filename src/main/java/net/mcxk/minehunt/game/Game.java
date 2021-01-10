@@ -316,7 +316,7 @@ public class Game {
         }
         inGamePlayers.forEach(p->p.sendTitle(ChatColor.GREEN+"感谢游玩", "Thanks for playing!",0 ,20000 ,0 ));
         Thread.sleep(sleep);
-        inGamePlayers.forEach(p->p.sendTitle(ChatColor.GREEN+"星空物语", "友尽大逃杀-MineHunt",0 ,20000 ,0 ));
+        inGamePlayers.forEach(p->p.sendTitle(ChatColor.GREEN+"初心时代", "友尽大逃杀-MineHunt",0 ,20000 ,0 ));
         Thread.sleep(sleep);
 
         inGamePlayers.forEach(Player::resetTitle);
