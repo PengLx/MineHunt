@@ -1,20 +1,16 @@
 package net.mcxk.minehunt.util;
 
-import com.xxmicloxx.NoteBlockAPI.model.Song;
-import com.xxmicloxx.NoteBlockAPI.songplayer.RadioSongPlayer;
-import com.xxmicloxx.NoteBlockAPI.utils.NBSDecoder;
 import lombok.SneakyThrows;
 import net.mcxk.minehunt.MineHunt;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.io.File;
-import java.nio.file.Files;
 
 public class MusicPlayer {
     @SneakyThrows
-    public void playEnding(){
+    public void playEnding() {
+        //本来设计放红石音乐 想想算了
 //        if(Bukkit.getPluginManager().isPluginEnabled("NoteBlockAPI")) {
 //          //  Files.copy(MineHunt.getInstance().getResource("newNBS.nbs"),new File(MineHunt.getInstance().getDataFolder(),"nbs.nbs").toPath());
 //            Song song = NBSDecoder.parse(MineHunt.getInstance().getResource("newNBS.nbs"));
@@ -29,11 +25,11 @@ public class MusicPlayer {
 //        Bukkit.getOnlinePlayers().forEach(p->{
 //            if(p.isDead()){p.spigot().respawn();}
 //        });
-        new BukkitRunnable(){
+        new BukkitRunnable() {
             @Override
             public void run() {
-                Bukkit.getOnlinePlayers().forEach(p->p.playSound(p.getLocation(), Sound.MUSIC_DISC_WAIT,1.0f,1.0f));
+                Bukkit.getOnlinePlayers().forEach(p -> p.playSound(p.getLocation(), Sound.MUSIC_DISC_WAIT, 1.0f, 1.0f));
             }
-        }.runTaskLater(MineHunt.getInstance(),1);
+        }.runTaskLater(MineHunt.getInstance(), 1);
     }
 }
